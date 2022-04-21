@@ -16,19 +16,19 @@ data.data4.panel[is.na(data.data4.panel)] <- 0
 transform_education <- function(education_list) {
   list.education.transformed <- c()
   for(edu in education_list) {
-    if(edu == 1) {
+    if(edu == 2) {
       list.education.transformed <- append(list.education.transformed, 4)
-    } else if(edu == 2) {
-      list.education.transformed <- append(list.education.transformed, 12)
     } else if(edu == 3) {
-      list.education.transformed <- append(list.education.transformed, 14)
+      list.education.transformed <- append(list.education.transformed, 12)
     } else if(edu == 4) {
-      list.education.transformed <- append(list.education.transformed, 16)
+      list.education.transformed <- append(list.education.transformed, 14)
     } else if(edu == 5) {
-      list.education.transformed <- append(list.education.transformed, 18)
+      list.education.transformed <- append(list.education.transformed, 16)
     } else if(edu == 6) {
-      list.education.transformed <- append(list.education.transformed, 23)
+      list.education.transformed <- append(list.education.transformed, 18)
     } else if(edu == 7) {
+      list.education.transformed <- append(list.education.transformed, 23)
+    } else if(edu == 8) {
       list.education.transformed <- append(list.education.transformed, 22)
     } else {
       list.education.transformed <- append(list.education.transformed, 0)
